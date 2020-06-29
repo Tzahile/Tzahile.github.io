@@ -1,0 +1,90 @@
+<template>
+  <v-app-bar
+    flat
+    prominent
+    :height="!$vuetify.breakpoint.xs ? 220 : 200"
+    app
+    color="primary"
+    dark
+  >
+    <v-row no-gutter :align="$vuetify.breakpoint.xs ? 'center' : 'end'">
+      <v-col align-self="start" class="pa-0" cols="auto">
+        <v-avatar tile :size="!$vuetify.breakpoint.xs ? 150 : 135">
+          <v-img src="../assets/cvpicture.jpeg"></v-img>
+        </v-avatar>
+      </v-col>
+      <v-col
+        class="py-0"
+        xl="9"
+        xs="3"
+        cols="8"
+        :class="{ 'px-0': $vuetify.breakpoint.xs }"
+      >
+        <v-list-item>
+          <v-list-item-content>
+            <v-list-item-title
+              class="text-xl-h4 text-lg-h4 text-md-h4 text-sm-h4 text-h6"
+            >
+              Izhak Lehmann
+            </v-list-item-title>
+            <v-list-item-subtitle class="text-sm-h4 text-subtitle-1">
+              Electrical Engineer
+            </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
+      </v-col>
+      <v-col cols="4" xs="2">
+        <v-btn
+          :small="$vuetify.breakpoint.xs"
+          :large="!$vuetify.breakpoint.xs"
+          icon
+          href="https://github.com/Tzahile"
+          target="_blank"
+        >
+          <v-icon>mdi-github</v-icon>
+        </v-btn>
+
+        <v-btn
+          icon
+          :small="$vuetify.breakpoint.xs"
+          :large="!$vuetify.breakpoint.xs"
+          href="https://stackoverflow.com/users/5762431/tzahi-leh"
+          target="_blank"
+        >
+          <v-icon>mdi-stack-overflow</v-icon>
+        </v-btn>
+
+        <v-btn
+          :small="$vuetify.breakpoint.xs"
+          :large="!$vuetify.breakpoint.xs"
+          icon
+          href="https://www.linkedin.com/in/tzahile"
+          target="_blank"
+        >
+          <v-icon>mdi-linkedin</v-icon>
+        </v-btn>
+      </v-col>
+      <v-spacer
+        v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
+      ></v-spacer>
+      <v-col v-if="!$vuetify.breakpoint.xs" cols="3" md="5" align="end">
+        <v-btn text href="mailto:gotenks33@gmail.com" class="text-lowercase">
+          <v-icon small class="pr-2">mdi-gmail</v-icon>
+          gotenks33@gmail.com
+        </v-btn>
+        <div
+          v-show="!$vuetify.breakpoint.sm"
+          class="text-capitalize v-btn text-body-2 font-weight-medium pr-4"
+          style="background-color: unset;"
+        >
+          <v-icon small class="pr-2">mdi-map-marker-radius</v-icon>
+          Netanya, Israel, IL
+        </div>
+      </v-col>
+    </v-row>
+  </v-app-bar>
+</template>
+
+<script>
+export default {};
+</script>
