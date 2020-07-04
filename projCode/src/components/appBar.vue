@@ -40,10 +40,8 @@
       <v-col v-if="!$vuetify.breakpoint.xs" cols="4" xs="2">
         <profLinks></profLinks>
       </v-col>
-      <v-spacer
-        v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
-      ></v-spacer>
-      <v-col v-if="!$vuetify.breakpoint.xs" cols="3" md="5" align="end">
+      <v-spacer></v-spacer>
+      <v-col v-if="!$vuetify.breakpoint.xs" md="5" align="end">
         <v-btn text href="mailto:gotenks33@gmail.com" class="text-lowercase">
           <v-icon small class="pr-2">mdi-gmail</v-icon>
           gotenks33@gmail.com
