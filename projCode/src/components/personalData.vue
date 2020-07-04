@@ -1,27 +1,38 @@
 <template>
-  <v-container>
+  <v-container @mouseover="hover = undefined">
     <v-row
       v-for="(subject, index) in subjects"
       :key="'subj' + index"
       class="pb-4"
       no-gutters
     >
-      <v-col class="teal--text text-capitalize text-xl-h5 text-h6" cols="12">
+      <v-col class="accent--text text-capitalize text-xl-h5 text-h6" cols="12">
         {{ subject.title }}
         <v-divider></v-divider>
       </v-col>
       <template v-for="(element, index) in subject.content">
         <v-col
+          @mouseover.stop="hover = element.title"
           cols="4"
           class="mt-3 text-xl-h6 font-weight-bold"
           :key="element.title"
         >
-          <v-icon small class="mb-1 pr-1" v-if="element.icon">
-            {{ element.icon }}
+          <v-icon
+            :color="hover === element.title ? element.icon.color : ''"
+            small
+            class="mb-1 pr-1"
+            v-if="element.icon"
+          >
+            {{ element.icon.shape }}
           </v-icon>
           {{ element.title }}
         </v-col>
-        <v-col cols="8" class="mt-3 text-xl-h6" :key="'el' + index">
+        <v-col
+          @mouseover.stop="hover = element.title"
+          cols="8"
+          class="mt-3 text-xl-h6"
+          :key="'el' + index"
+        >
           <v-row no-gutters>
             <v-col cols="12">
               {{ element.value }}
@@ -37,39 +48,57 @@
 </template>
 
 <script>
+import { colors } from "vuetify/lib";
+
 export default {
   name: "HelloWorld",
 
   data() {
     return {
+      hover: undefined,
       subjects: [
         {
           title: "Personal Information",
           content: [
             {
-              icon: "mdi-account",
+              icon: {
+                shape: "mdi-account",
+                color: "#ffc088",
+              },
               title: "Full Name",
               value: "Izhak Lehmann",
             },
             {
-              icon: "mdi-map-marker-radius",
+              icon: {
+                shape: "mdi-map-marker-radius",
+                color: "green",
+              },
               title: "Address",
               value: "Harakefet 46, Pardesia",
             },
             {
-              icon: "mdi-cake-variant",
+              icon: {
+                shape: "mdi-cake-variant",
+                color: "orange",
+              },
               title: "Date of Birth",
               value: "15.02.1993",
             },
             {
-              icon: "mdi-gmail",
+              icon: {
+                shape: "mdi-gmail",
+                color: "#D44638",
+              },
               title: "E-mail",
               value: "Gotenks33@gmail.com",
             },
             {
-              icon: "mdi-face-profile",
+              icon: {
+                shape: "mdi-face-profile",
+                color: colors.brown.darken2,
+              },
               title: "Profile",
-              value: `Self-learner with strong problem-solving skills, attention to detail and high sense of responsibility`,
+              value: `An avid learner with strong problem-solving skills, attention to detail and high sense of responsibility`,
               subvalue: `Seeking a software-engineer position in a fast-growing company where I can contribute and make an impact`,
             },
           ],
@@ -104,34 +133,52 @@ export default {
           title: "Skills",
           content: [
             {
-              icon: "mdi-web",
+              icon: {
+                shape: "mdi-web",
+                color: colors.blue.darken3,
+              },
               title: "Frontend",
               value: "Javascript, HTML5, CSS3",
               subvalue: "Vuejs, Webpack, Sass, Chrome dev-tools",
             },
             {
-              icon: "mdi-server",
+              icon: {
+                shape: "mdi-server",
+                color: "red",
+              },
               title: "Backend",
               value: "Javascript, Python",
               subvalue: "Nodejs, .Net",
             },
             {
-              icon: "mdi-database",
+              icon: {
+                shape: "mdi-database",
+                color: colors.yellow.darken3,
+              },
               title: "Database",
               value: "Postgres",
             },
             {
-              icon: "mdi-docker",
+              icon: {
+                shape: "mdi-docker",
+                color: colors.blue.lighten2,
+              },
               title: "DevOps",
               value: "Docker",
             },
             {
-              icon: "mdi-folder-network",
+              icon: {
+                shape: "mdi-folder-network",
+                color: colors.blueGrey.lighten1,
+              },
               title: "Version Control and workflow",
               value: "Git, Jira",
             },
             {
-              icon: "mdi-microsoft-visual-studio-code",
+              icon: {
+                shape: "mdi-microsoft-visual-studio-code",
+                color: "#1f9cf0",
+              },
               title: "IDEs",
               value: "VSCode",
             },
@@ -156,22 +203,34 @@ export default {
           title: "Hobbies",
           content: [
             {
-              icon: "mdi-music",
+              icon: {
+                shape: "mdi-music",
+                color: "#000",
+              },
               title: "Music",
               value: "Playing the piano, singing",
             },
             {
-              icon: "mdi-bike",
+              icon: {
+                shape: "mdi-bike",
+                color: colors.purple.darken1,
+              },
               title: "Sports",
               value: "Running, biking, swimming",
             },
             {
-              icon: "mdi-chess-knight",
+              icon: {
+                shape: "mdi-chess-knight",
+                color: "#D00020",
+              },
               title: "Board Games",
               value: "Chess, Catan",
             },
             {
-              icon: "mdi-dog-side",
+              icon: {
+                shape: "mdi-dog-side",
+                color: "#000",
+              },
               title: "Pet care",
               value: "Proud owner of a labrador",
             },
