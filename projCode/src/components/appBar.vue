@@ -10,7 +10,7 @@
     <v-row no-gutter :align="$vuetify.breakpoint.xs ? 'center' : 'end'">
       <v-col align-self="start" class="pa-0" cols="auto">
         <v-avatar tile :size="!$vuetify.breakpoint.xs ? 150 : 135">
-          <v-img src="../assets/cvpicture.jpeg"></v-img>
+          <v-img src="../assets/cvFinal.jpeg"></v-img>
         </v-avatar>
       </v-col>
       <v-col
