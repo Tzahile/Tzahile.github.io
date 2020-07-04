@@ -2,14 +2,14 @@
   <v-app-bar
     flat
     prominent
-    :height="!$vuetify.breakpoint.xs ? 220 : 200"
+    :height="!$vuetify.breakpoint.xs ? 220 : 168"
     app
     color="primary"
     dark
   >
     <v-row no-gutter :align="$vuetify.breakpoint.xs ? 'center' : 'end'">
       <v-col align-self="start" class="pa-0" cols="auto">
-        <v-avatar tile :size="!$vuetify.breakpoint.xs ? 150 : 135">
+        <v-avatar tile size="160">
           <v-img src="../assets/cvFinal.jpeg"></v-img>
         </v-avatar>
       </v-col>
@@ -17,13 +17,14 @@
         class="py-0"
         xl="9"
         xs="3"
-        cols="8"
+        md="8"
+        sm="8"
         :class="{ 'px-0': $vuetify.breakpoint.xs }"
       >
         <v-list-item>
           <v-list-item-content>
             <v-list-item-title
-              class="text-xl-h4 text-lg-h4 text-md-h4 text-sm-h4 text-h6"
+              class="text-xl-h4 text-lg-h4 text-md-h4 text-sm-h4 text-h5"
             >
               Izhak Lehmann
             </v-list-item-title>
@@ -32,37 +33,12 @@
             </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
+        <v-col v-if="$vuetify.breakpoint.xs">
+          <profLinks></profLinks>
+        </v-col>
       </v-col>
-      <v-col cols="4" xs="2">
-        <v-btn
-          :small="$vuetify.breakpoint.xs"
-          :large="!$vuetify.breakpoint.xs"
-          icon
-          href="https://github.com/Tzahile"
-          target="_blank"
-        >
-          <v-icon>mdi-github</v-icon>
-        </v-btn>
-
-        <v-btn
-          icon
-          :small="$vuetify.breakpoint.xs"
-          :large="!$vuetify.breakpoint.xs"
-          href="https://stackoverflow.com/users/5762431/tzahi-leh"
-          target="_blank"
-        >
-          <v-icon>mdi-stack-overflow</v-icon>
-        </v-btn>
-
-        <v-btn
-          :small="$vuetify.breakpoint.xs"
-          :large="!$vuetify.breakpoint.xs"
-          icon
-          href="https://www.linkedin.com/in/tzahile"
-          target="_blank"
-        >
-          <v-icon>mdi-linkedin</v-icon>
-        </v-btn>
+      <v-col v-if="!$vuetify.breakpoint.xs" cols="4" xs="2">
+        <profLinks></profLinks>
       </v-col>
       <v-spacer
         v-if="!$vuetify.breakpoint.xs && !$vuetify.breakpoint.sm"
@@ -86,5 +62,11 @@
 </template>
 
 <script>
-export default {};
+import profLinks from "./profLinks.vue";
+
+export default {
+  components: {
+    profLinks,
+  },
+};
 </script>
