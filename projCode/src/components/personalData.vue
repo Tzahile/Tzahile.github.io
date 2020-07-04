@@ -70,7 +70,17 @@ export default {
               icon: "mdi-face-profile",
               title: "Profile",
               value: `Self-learner with strong problem-solving skills, attention to detail and high sense of responsibility`,
-              subvalue: `Seeking for a position of a software engineer in a fast-growing company`,
+              subvalue: `Seeking a software-engineer position in a fast-growing company where I can contribute and make an impact`,
+            },
+          ],
+        },
+        {
+          title: "Experience",
+          content: [
+            {
+              title: "May '18 - Present",
+              value: "Elbit Systems - Land C4I and Cyber",
+              subvalue: "Fullstack software engineer",
             },
           ],
         },
@@ -91,48 +101,39 @@ export default {
           ],
         },
         {
-          title: "Experience",
-          content: [
-            {
-              title: "May '18 - Present",
-              value: "Elbit Systems - Land C4I and Cyber",
-              subvalue: "Fullstack software engineer",
-            },
-          ],
-        },
-        {
           title: "Skills",
           content: [
             {
               icon: "mdi-web",
               title: "Frontend",
               value: "Javascript, HTML5, CSS3",
-              subvalue:
-                "Vue, Webpack, Babel, Bootstrap, JQuery, Sass, Chrome dev-tools",
+              subvalue: "Vuejs, Webpack, Sass, Chrome dev-tools",
             },
             {
               icon: "mdi-server",
               title: "Backend",
-              value: "Javascript, C, C#, Python",
+              value: "Javascript, Python",
               subvalue: "Nodejs, .Net",
             },
             {
-              icon: "mdi-linux",
-              title: "Operation systems",
-              value: "Linux",
-              subvalue: "Ubuntu",
-            },
-            {
-              icon: "mdi-folder-network",
-              title: "Version Control and workflow",
-              value: "Git, SVN, Jira",
-              subvalue: "GitHub, GitLab, BitBucket, Trello",
+              icon: "mdi-database",
+              title: "Database",
+              value: "Postgres",
             },
             {
               icon: "mdi-docker",
               title: "DevOps",
-              value: "Docker, Kubernetes",
-              subvalue: "Azure",
+              value: "Docker",
+            },
+            {
+              icon: "mdi-folder-network",
+              title: "Version Control and workflow",
+              value: "Git, Jira",
+            },
+            {
+              icon: "mdi-microsoft-visual-studio-code",
+              title: "IDEs",
+              value: "VSCode",
             },
           ],
         },
