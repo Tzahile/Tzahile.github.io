@@ -74,7 +74,7 @@ export default {
                 color: "green",
               },
               title: "Address",
-              value: "Harakefet 46, Pardesia",
+              value: "Tel-Aviv, Israel",
             },
             {
               icon: {

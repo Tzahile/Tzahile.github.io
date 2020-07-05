@@ -52,7 +52,7 @@
           style="background-color: unset;"
         >
           <v-icon small class="pr-2">mdi-map-marker-radius</v-icon>
-          Netanya, Israel, IL
+          Tel-Aviv, Israel
         </div>
       </v-col>
     </v-row>
