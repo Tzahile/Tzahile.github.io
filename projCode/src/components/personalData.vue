@@ -94,12 +94,20 @@ export default {
             },
             {
               icon: {
+                shape: "mdi-home-heart",
+                color: colors.red.darken3,
+              },
+              title: "Personal Status",
+              value: `Married`,
+            },
+            {
+              icon: {
                 shape: "mdi-face-profile",
                 color: colors.brown.darken2,
               },
               title: "Profile",
               value: `An avid learner with strong problem-solving skills, attention to detail and high sense of responsibility`,
-              subvalue: `Seeking a software-engineer position in a fast-growing company where I can contribute and make an impact`,
+              // subvalue: `Seeking a software-engineer position in a fast-growing company where I can contribute and make an impact`,
             },
           ],
         },
@@ -120,7 +128,7 @@ export default {
               title: "2015 - 2019",
               value:
                 "Tel-Aviv University, Bachelor degree in Electrical Engineering",
-              subvalue: "Computers, Energy, Signal Processing",
+              subvalue: "Computers, Energy, Signal-Processing",
             },
             {
               title: "2005 - 2011",
@@ -190,12 +198,12 @@ export default {
             {
               title: "2012 - 2015",
               value: "IDF Navy",
-              subvalue: "Electronic Warefare, honorably discharged",
+              // subvalue: "Electronic Warefare, honorably discharged",
             },
             {
               title: "2011 - 2012",
               value: "Magen David Adom",
-              subvalue: "First Aider, finished the course with honors",
+              subvalue: "First Aider", //, finished the course with honors",
             },
           ],
         },
@@ -218,22 +226,22 @@ export default {
               title: "Sports",
               value: "Running, biking, swimming",
             },
-            {
-              icon: {
-                shape: "mdi-chess-knight",
-                color: "#D00020",
-              },
-              title: "Board Games",
-              value: "Chess, Catan",
-            },
-            {
-              icon: {
-                shape: "mdi-dog-side",
-                color: "#000",
-              },
-              title: "Pet care",
-              value: "Proud owner of a labrador",
-            },
+            // {
+            //   icon: {
+            //     shape: "mdi-chess-knight",
+            //     color: "#D00020",
+            //   },
+            //   title: "Board Games",
+            //   value: "Chess, Catan",
+            // },
+            // {
+            //   icon: {
+            //     shape: "mdi-dog-side",
+            //     color: "#000",
+            //   },
+            //   title: "Pet care",
+            //   value: "Proud owner of a labrador",
+            // },
           ],
         },
         {
