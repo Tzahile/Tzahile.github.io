@@ -37,8 +37,11 @@
             <v-col cols="12">
               {{ element.value }}
             </v-col>
-            <v-col v-if="element.subvalue" class="font-weight-light">
-              {{ element.subvalue }}
+            <v-col
+              v-if="element.subvalue"
+              class="font-weight-light"
+              v-html="element.subvalue"
+            >
             </v-col>
           </v-row>
         </v-col>
@@ -125,7 +128,28 @@ export default {
             {
               title: "May '18 - Present",
               value: "Elbit Systems - Land C4I and Cyber",
-              subvalue: "Fullstack software engineer",
+              subvalue: `
+              <b>Fullstack software engineer</b>
+              <br />
+              <ul>
+                <li>
+                  Design and implementation of a client-server web application for a generic solution to support development of radio devices<br />
+                  - Frontend: <i>Vue.js</i><br/>
+                  - Backend: <i>C#.Net</i>
+                </li>
+                <li>
+                  Development of a generic raw-data analysis distributed infrastructure solution in a form of a web application, designed for handling Big Data with easily configurable analysis environment<br />
+                  - Frontend: <i>Vue.js</i><br /> 
+                  - Main backend server: <i>Node.js</i><br/>
+                  - Analysing micro-service: <i>Python</i><br/>
+                </li>
+                <li>
+                  Participation in Hackathons dedicated to actual problems of society<br/>
+                  - Covid-19, Mobile application for measuring user's heartbeat rate<br/>
+                  - Python-based software for mapping the inner structure of a building from distance
+                </li>
+              </ul>
+              `,
             },
           ],
         },
