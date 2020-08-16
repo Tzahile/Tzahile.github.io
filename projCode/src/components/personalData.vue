@@ -73,7 +73,7 @@ export default {
                 shape: "mdi-map-marker-radius",
                 color: "green",
               },
-              title: "Address",
+              title: "Location",
               value: "Tel-Aviv, Israel",
             },
             {
@@ -81,8 +81,8 @@ export default {
                 shape: "mdi-cake-variant",
                 color: "orange",
               },
-              title: "Date of Birth",
-              value: "15.02.1993",
+              title: "Age",
+              value: "27",
             },
             {
               icon: {
@@ -94,12 +94,20 @@ export default {
             },
             {
               icon: {
-                shape: "mdi-home-heart",
-                color: colors.red.darken3,
+                shape: "mdi-skype",
+                color: "#00aff0",
               },
-              title: "Personal Status",
-              value: `Married`,
+              title: "Skype",
+              value: "tzahi_leh",
             },
+            // {
+            //   icon: {
+            //     shape: "mdi-home-heart",
+            //     color: colors.red.darken3,
+            //   },
+            //   title: "Personal Status",
+            //   value: `Married`,
+            // },
             {
               icon: {
                 shape: "mdi-face-profile",
@@ -128,7 +136,7 @@ export default {
               title: "2015 - 2019",
               value:
                 "Tel-Aviv University, Bachelor degree in Electrical Engineering",
-              subvalue: "Computers, Energy, Signal-Processing",
+              subvalue: "Computers, Energy, Signal Processing",
             },
             {
               title: "2005 - 2011",
@@ -164,7 +172,7 @@ export default {
                 color: colors.yellow.darken3,
               },
               title: "Database",
-              value: "Postgres",
+              value: "PostgreSQL, MySQL",
             },
             {
               icon: {
@@ -203,7 +211,7 @@ export default {
             {
               title: "2011 - 2012",
               value: "Magen David Adom",
-              subvalue: "First Aider", //, finished the course with honors",
+              subvalue: "First Aider",
             },
           ],
         },
@@ -226,14 +234,14 @@ export default {
               title: "Sports",
               value: "Running, biking, swimming",
             },
-            // {
-            //   icon: {
-            //     shape: "mdi-chess-knight",
-            //     color: "#D00020",
-            //   },
-            //   title: "Board Games",
-            //   value: "Chess, Catan",
-            // },
+            {
+              icon: {
+                shape: "mdi-chess-knight",
+                color: "#D00020",
+              },
+              title: "Strategy Board Games",
+              value: "Chess, Catan",
+            },
             // {
             //   icon: {
             //     shape: "mdi-dog-side",
