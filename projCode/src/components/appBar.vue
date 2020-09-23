@@ -52,7 +52,7 @@
         <div
           v-show="!$vuetify.breakpoint.sm"
           class="text-capitalize v-btn text-body-2 font-weight-medium pr-4"
-          style="background-color: unset;"
+          style="background-color: unset"
         >
           <v-icon small class="pr-2">mdi-map-marker-radius</v-icon>
           Tel-Aviv, Israel
