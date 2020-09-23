@@ -126,7 +126,7 @@ export default {
           title: "Experience",
           content: [
             {
-              title: "May '18 - Present",
+              title: "April '18 - Present",
               value: "Elbit Systems - Land C4I and Cyber",
               subvalue: `
               <b>Fullstack software engineer</b>
