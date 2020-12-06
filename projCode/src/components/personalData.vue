@@ -200,6 +200,14 @@ export default {
             },
             {
               icon: {
+                shape: "mdi-google-circles-extended",
+                color: colors.purple.lighten2,
+              },
+              title: "Message Queuing",
+              value: "Kafka",
+            },
+            {
+              icon: {
                 shape: "mdi-docker",
                 color: colors.blue.lighten2,
               },
