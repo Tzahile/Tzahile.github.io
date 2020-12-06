@@ -77,7 +77,7 @@ export default {
                 color: "green",
               },
               title: "Location",
-              value: "Tel-Aviv, Israel",
+              value: "Helsinki, Finland",
             },
             {
               icon: {
@@ -178,8 +178,8 @@ export default {
                 color: colors.blue.darken3,
               },
               title: "Frontend",
-              value: "Javascript, HTML5, CSS3",
-              subvalue: "Vuejs, Webpack, Sass, Chrome dev-tools",
+              value: "Vuejs, HTML5, CSS3",
+              subvalue: "Webpack, Sass, Chrome dev-tools",
             },
             {
               icon: {
@@ -187,8 +187,8 @@ export default {
                 color: "red",
               },
               title: "Backend",
-              value: "Javascript, Python",
-              subvalue: "Nodejs, .Net",
+              value: "Nodejs (js), Python",
+              subvalue: "Deno (ts), .Net, Go",
             },
             {
               icon: {
