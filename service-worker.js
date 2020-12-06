@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.a8c9c5199b441259f04d57ed576d17fa.js"
+  "/precache-manifest.d33577d065c89f42373272194027d650.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "resume2020"});
