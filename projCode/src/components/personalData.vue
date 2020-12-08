@@ -54,8 +54,6 @@
 import { colors } from "vuetify/lib";
 
 export default {
-  name: "HelloWorld",
-
   data() {
     return {
       hover: undefined,
@@ -77,7 +75,7 @@ export default {
                 color: "green",
               },
               title: "Location",
-              value: "Helsinki, Finland",
+              value: "Tel-Aviv, Israel",
             },
             {
               icon: {
@@ -135,7 +133,7 @@ export default {
                 <li>
                   Design and implementation of a client-server web application for a generic solution to support development of radio devices<br />
                   - Frontend: <i>Vue.js</i><br/>
-                  - Backend: <i>C#.Net</i>
+                  - Backend: <i>C#</i>
                 </li>
                 <li>
                   Development of a generic raw-data analysis distributed infrastructure solution in a form of a web application, designed for handling Big Data with easily configurable analysis environment<br />
@@ -188,7 +186,7 @@ export default {
               },
               title: "Backend",
               value: "Nodejs (js), Python",
-              subvalue: "Deno (ts), .Net, Go",
+              subvalue: "Deno (ts), C#",
             },
             {
               icon: {
@@ -212,7 +210,7 @@ export default {
                 color: colors.blue.lighten2,
               },
               title: "DevOps",
-              value: "Docker",
+              value: "Docker, Containers",
             },
             {
               icon: {
