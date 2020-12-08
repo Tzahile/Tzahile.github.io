@@ -13,14 +13,14 @@
       <template v-for="(element, index) in subject.content">
         <v-col
           @mouseover.stop="hover = element.title"
-          cols="4"
+          cols="3"
           class="mt-3 text-xl-h6 font-weight-bold"
           :key="element.title"
         >
           <v-icon
             :color="hover === element.title ? element.icon.color : ''"
             small
-            class="mb-1 pr-1"
+            class="mb-1 pr-2"
             v-if="element.icon"
           >
             {{ element.icon.shape }}
@@ -91,16 +91,16 @@ export default {
                 color: "#D44638",
               },
               title: "E-mail",
-              value: "Gotenks33@gmail.com",
+              value: "gotenks33@gmail.com",
             },
-            {
-              icon: {
-                shape: "mdi-skype",
-                color: "#00aff0",
-              },
-              title: "Skype",
-              value: "tzahi_leh",
-            },
+            // {
+            //   icon: {
+            //     shape: "mdi-skype",
+            //     color: "#00aff0",
+            //   },
+            //   title: "Skype",
+            //   value: "tzahi_leh",
+            // },
             // {
             //   icon: {
             //     shape: "mdi-home-heart",
@@ -194,7 +194,7 @@ export default {
                 color: colors.yellow.darken3,
               },
               title: "Database",
-              value: "PostgreSQL, MySQL",
+              value: "PostgreSQL",
             },
             {
               icon: {
@@ -210,14 +210,14 @@ export default {
                 color: colors.blue.lighten2,
               },
               title: "DevOps",
-              value: "Docker, Containers",
+              value: "Docker",
             },
             {
               icon: {
                 shape: "mdi-folder-network",
                 color: colors.blueGrey.lighten1,
               },
-              title: "Version Control and workflow",
+              title: "Workflow",
               value: "Git, Jira",
             },
             {
