@@ -32,7 +32,7 @@
             <v-list-item-subtitle
               class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-subtitle-1"
             >
-              Electrical Engineer
+              Fullstack Developer
             </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
@@ -45,18 +45,12 @@
       </v-col>
       <v-spacer></v-spacer>
       <v-col v-if="!$vuetify.breakpoint.xs" class="py-0" md="5" align="end">
-        <v-btn text href="mailto:gotenks33@gmail.com" class="text-lowercase">
-          <v-icon small class="pr-2">mdi-gmail</v-icon>
-          gotenks33@gmail.com
+        <v-btn icon href="mailto:gotenks33@gmail.com">
+          <v-icon>mdi-gmail</v-icon>
         </v-btn>
-        <div
-          v-show="!$vuetify.breakpoint.sm"
-          class="text-capitalize v-btn text-body-2 font-weight-medium pr-4"
-          style="background-color: unset"
-        >
-          <v-icon small class="pr-2">mdi-map-marker-radius</v-icon>
-          Tel-Aviv, Israel
-        </div>
+        <v-btn icon href="https://wa.me/972545269666">
+          <v-icon>mdi-whatsapp</v-icon>
+        </v-btn>
       </v-col>
     </v-row>
   </v-app-bar>
