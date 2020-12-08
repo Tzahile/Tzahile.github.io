@@ -269,7 +269,7 @@ export default {
                 shape: "mdi-chess-knight",
                 color: "#D00020",
               },
-              title: "Strategy Board Games",
+              title: "Board Games",
               value: "Chess, Catan",
             },
             // {
