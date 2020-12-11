@@ -75,7 +75,7 @@ export default {
                 color: "green",
               },
               title: "Location",
-              value: "Tel-Aviv, Israel",
+              value: "Helsinki, Finland",
             },
             {
               icon: {
