@@ -34,7 +34,7 @@
           :key="'el' + index"
         >
           <v-row no-gutters>
-            <v-col cols="12">
+            <v-col cols="12" class="text-body-1">
               {{ element.value }}
             </v-col>
             <v-col
@@ -75,7 +75,7 @@ export default {
                 color: "green",
               },
               title: "Location",
-              value: "Helsinki, Finland",
+              value: "Tel Aviv, Israel",
             },
             {
               icon: {
@@ -83,7 +83,7 @@ export default {
                 color: "orange",
               },
               title: "Age",
-              value: "27",
+              value: "28",
             },
             {
               icon: {
@@ -124,10 +124,24 @@ export default {
           title: "Experience",
           content: [
             {
-              title: "April '18 - Present",
+              title: "Feb '21 - Present",
+              value: "Qualcomm",
+              subvalue: `
+              <b class="text-body-2">Research & Development Software Engineer</b>
+              <br />
+              <ul>
+                <li>
+                  Development of an application that enables continuous integration of FW code <br />
+                  - Frontend: <i>Vue.js</i><br/>
+                </li>
+              </ul>
+              `,
+            },
+            {
+              title: "April '18 - Feb '21",
               value: "Elbit Systems - Land C4I and Cyber",
               subvalue: `
-              <b>Fullstack software engineer</b>
+              <b class="text-body-2">Fullstack Software Engineer</b>
               <br />
               <ul>
                 <li>
@@ -185,7 +199,7 @@ export default {
                 color: "red",
               },
               title: "Backend",
-              value: "Nodejs (js), Python",
+              value: "Nodejs (js, ts), Python",
               subvalue: "Deno (ts), C#",
             },
             {
@@ -300,5 +314,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss"></style>

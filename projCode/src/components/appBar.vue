@@ -2,12 +2,12 @@
   <v-app-bar
     flat
     prominent
-    :height="!$vuetify.breakpoint.xs ? 200 : 160"
+    :height="!$vuetify.breakpoint.xs ? 200 : 149"
     app
     color="primary"
     dark
   >
-    <v-row no-gutter align="end">
+    <v-row id="avatarRow" no-gutter align="end">
       <v-col align-self="start" class="pa-0" cols="auto">
         <v-avatar tile size="150">
           <v-img src="../assets/cvFinal.jpeg"></v-img>
@@ -30,13 +30,19 @@
               Izhak Lehmann
             </v-list-item-title>
             <v-list-item-subtitle
-              class="text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-subtitle-1"
+              class="
+                text-xl-h6 text-lg-h6 text-md-h6 text-sm-h6 text-subtitle-1
+              "
             >
               Fullstack Developer
             </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
-        <v-col v-if="$vuetify.breakpoint.xs" class="py-0">
+        <v-col
+          v-if="$vuetify.breakpoint.xs"
+          class="py-0"
+          :class="{ 'pb-1': $vuetify.breakpoint.xs }"
+        >
           <profLinks></profLinks>
         </v-col>
       </v-col>
@@ -65,3 +71,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+#avatarRow.row {
+  margin: -5px 0px 0px -16px;
+}
+</style>
