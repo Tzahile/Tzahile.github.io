@@ -93,22 +93,6 @@ export default {
               title: "E-mail",
               value: "gotenks33@gmail.com",
             },
-            // {
-            //   icon: {
-            //     shape: "mdi-skype",
-            //     color: "#00aff0",
-            //   },
-            //   title: "Skype",
-            //   value: "tzahi_leh",
-            // },
-            // {
-            //   icon: {
-            //     shape: "mdi-home-heart",
-            //     color: colors.red.darken3,
-            //   },
-            //   title: "Personal Status",
-            //   value: `Married`,
-            // },
             {
               icon: {
                 shape: "mdi-face-profile",
@@ -124,7 +108,21 @@ export default {
           title: "Experience",
           content: [
             {
-              title: "Feb '21 - Present",
+              title: "Jul '21 - Present",
+              value: "Noname Security",
+              subvalue: `
+              <b class="text-body-2">Research & Development Software Engineer</b>
+              <br />
+              <ul>
+                <li>
+                  Development of an application that enables continuous integration of FW code <br />
+                  - Frontend: <i>Vue.js</i><br/>
+                </li>
+              </ul>
+              `,
+            },
+            {
+              title: "Feb '21 - Jul '21",
               value: "Qualcomm",
               subvalue: `
               <b class="text-body-2">Research & Development Software Engineer</b>
